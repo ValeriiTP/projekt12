@@ -1,31 +1,38 @@
 
-main{
-    height: 100vh             ;
+main {
+    height: 100vh;
     background-color: green;
     display: flex;
     flex-direction: column;
-    
 }
-html,body{
+
+html, body {
     height: 100%;
-}
-#hed{
-height: 200px;
-    background-color: black;
-    width: 1600px;
-color: aliceblue;
-}
-a{
-    font-size: 50px;
-padding-left: 500px;
+    margin: 0; /* Додаємо, щоб прибрати відступи */
 }
 
-#foot{
-background-color: red;
-width: 1600px;
-height: 100vh;
-
-}
-#main{
+#main {
+    display: flex; /* Додаємо display flex */
     flex-direction: column;
+    align-items: center; /* Вирівнювання по центру */
+}
+
+#hed {
+    height: 200px;
+    background-color: black;
+    width: 100%; /* Робимо ширину адаптивною */
+    max-width: 1600px; /* Максимальна ширина */
+    color: aliceblue;
+}
+
+a {
+    font-size: 50px;
+    padding-left: 500px;
+}
+
+#foot {
+    background-color: red;
+    width: 100%; /* Робимо ширину адаптивною */
+    max-width: 1600px; /* Максимальна ширина */
+    height: 100px; /* Фіксована висота для футера */
 }
